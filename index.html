@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+      <a href="#opening-days-time">Öffnungszeiten & Preise</a>
+      <a href="#contact-info">Kontakt</a>
+      <a href="#arrival-parking">Anfahrt & Parken</a>
+    </nav>
+
+  <div class="images">
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img src="../img/massage-therapy-ga231ad7df_1920.jpg">
+        <div class="text"></div>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="../img/wellness-g1858b5666_1920.jpg">
+        <div class="text"></div>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="../img/wellness-g402cdd804_1920.jpg">
+        <div class="text"></div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      <br>
+      
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+  </div>
+
+  <div class="white-space">
+    <div class="heading">
+      <h1>Thaimassage Matchima Hardt</h1>
+      <p>
+        Entspannen Sie sich bei einer Massage in angenehmer Atmosphäre, mit wohltuenden Aromen und leiser thailändischer Musik.
+        <span>Die Anstrengungen des Tages werden von Ihnen weichen.</span> 
+        Nehmen Sie sich eine Auszeit und lassen Sie sich verwöhnen.
+      </p>
+    </div>
+
+  <main>
+  <div class="line one"></div>
+
+  <section class="opening" id="opening-days-time">
+    <h2>Öffnungszeiten</h2>
+    <div class="days-time">
+      <div class="days">
+        <p>
+          Montag <br>
+          Dienstag <br>
+          Mittwoch <br>
+          Donnerstag <br>
+          Freitag <br>
+          Samstag <br>
+          Sonntag <br>
+          Feiertag
+        </p>
+      </div>
+      <div class="time">
+        <p>
+          10-20 Uhr <br>
+          10-20 Uhr <br>
+          10-20 Uhr <br>
+          10-20 Uhr <br>
+          10-20 Uhr <br>
+          10-20 Uhr <br>
+          geschlossen <br>
+          geschlossen
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="line two"></div>
+
+  <section class="price">
+    <h2>Preise</h2>
+    <h3>Öl-Massage oder Fußmassage</h3>
+<pre>
+30    min              23€
+60    min              35€
+90    min              50€
+120  min              60€
+</pre>
+    <h3>Thai-Massage oder Hot-Stone-Massage</h3>
+<pre>
+60   min               40€
+</pre>
+    <h3>Kopf- und Nackenmassage</h3>
+<pre>
+30  min               25€
+</pre>
+  </section>
+
+  <div class="line three"></div>
+
+  <section class="contact" id="contact-info">
+    <h2>Kontakt</h2>
+    <p>
+      Matchima Hardt <br>
+      Großwelzheimerstr. 6 <br>
+      63500 Seligenstadt <br>
+      Tel.: <a href="tel:+4961828206299">06182 8206299</a> <br>
+      Mobil: <a href="tel:+4915759664808">0157 59664808</a> 
+    </p>
+  </section>
+
+  <div class="line four"></div>
+
+  <section class="arrival" id="arrival-parking">
+    <h2>Anfahrt & Parken</h2>
+    <p>
+      Vor dem Haus auf dem Festplatz sind genügend Parkmöglichkeiten geboten.
+    </p>
+  </section>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.2907932441476!2d9.003133716134172!3d50.04338367942125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd3fe6c78261b5%3A0x9f2c452438c9c2a6!2sMatchima%20Thai-Massage!5e0!3m2!1sde!2sde!4v1660728607048!5m2!1sde!2sde" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </main>
+
+  <footer>
+    <a href="./impressum.html">Impressum</a>
+  </footer>
+  </div>
+
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>    
+</body>
+</html>
