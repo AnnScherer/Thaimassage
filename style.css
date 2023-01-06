@@ -236,8 +236,8 @@ footer a {
   }
 
   .christmas {
-    background-image: url(./img/hd-wallpaper-1911637_1920.jpg);
-    background-size: cover;
+    /* background-image: url(./img/hd-wallpaper-1911637_1920.jpg);
+    background-size: cover; */
     width: 100%;
     height: 100%;
     grid-area: 2/2/3/4;
@@ -276,6 +276,10 @@ footer a {
 }
 
 @media screen and (min-width: 1300px) {
+  .christmas {
+    background-color: #e0e0e0;
+  }
+
   img {
     height: 80vh;
   }
@@ -418,6 +422,6 @@ img {
   }
 }
 
-.white-space{
+/* .white-space{
   background-image: url(./img/background-gf1d3cd0aa_1920.png);
-}
+} */
