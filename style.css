@@ -241,8 +241,8 @@ footer a {
   }
 
   .christmas {
-    /* background-image: url(./img/hd-wallpaper-1911637_1920.jpg);
-    background-size: cover; */
+    background-image: url(./img/hd-wallpaper-1911637_1920.jpg);
+    background-size: cover;
     width: 100%;
     height: 100%;
     grid-area: 2/2/3/4;
@@ -427,6 +427,6 @@ img {
   }
 }
 
-/* .white-space{
+.white-space{
   background-image: url(./img/background-gf1d3cd0aa_1920.png);
-} */
+}
