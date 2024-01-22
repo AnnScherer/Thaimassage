@@ -240,7 +240,7 @@ footer a {
     height: 85vh;
   }
 
-  .christmas {
+  /* .christmas {
     background-image: url(./img/hd-wallpaper-1911637_1920.jpg);
     background-size: cover;
     width: 100%;
@@ -249,7 +249,7 @@ footer a {
     border-radius: 10px;
     display: flex;
     justify-content: center;
-  }
+  } */
 
   .transparent-box {
     background-color: #ffffffd8;
@@ -281,9 +281,9 @@ footer a {
 }
 
 @media screen and (min-width: 1300px) {
-  .christmas {
+  /* .christmas {
     background-color: #e0e0e0;
-  }
+  } */
 
   img {
     height: 80vh;
@@ -427,6 +427,6 @@ img {
   }
 }
 
-.white-space{
+/* .white-space{
   background-image: url(./img/background-gf1d3cd0aa_1920.png);
-}
+} */
